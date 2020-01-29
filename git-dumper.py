@@ -18,9 +18,6 @@ import dulwich.pack
 import requests
 import socks
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-
 def printf(fmt, *args, file=sys.stdout):
     if args:
         fmt = fmt % args
